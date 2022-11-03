@@ -14,113 +14,84 @@
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" data-scroll="on">
         <div class="content-wrapper">
-            <a href="#" class="navbar-brand">PIS Blog</a>
+            <a href="index.html" class="navbar-brand">PIS Blog</a>
             <ul class="navbar-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#article">Article</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#article">Article</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="home">
-        <div class="content-wrapper">
-            <div class="home-text-group">
-                <h1 class="home-title">Welcome to PIS Blog</h1>
-                <p class="home-description">
-                    We present interesting articles about the world of programming. This website is a form of working on our coursework at Binasarana Informatika University.
-                </p>
-                <h5 class="home-floating-text">
-                    <span id="created-text">Created By :</span> 
-                    <span id="typing-text"></span>
-                </h5>
-            </div>
-        </div>
-    </section>
-
     <div class="content-wrapper">
-        <section id="article">
-            <h1 class="section-title">
-                Popular Article
-            </h1>
-            <main class="article-group">
-                <article class="article-card">
-                    <img src="./assets/img/home-background.jpg" alt="Article Img" class="article-img">
-                    <div class="article-header">
-                        <a href="" class="article-title" title="Aritmatika dalam Pemrograman Python">
-                            Aritmatika dalam Pemrograman Python
-                        </a>
-                        <h5 class="article-date">
-                            Kamis, 3 November 2022
-                        </h5>
-                    </div>
-                    <p class="article-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At reprehenderit facere exercitationem fugit optio ex ab dicta officia modi illo quibusdam minima, ad, perferendis nihil?
-                    </p>
-                </article>
-                <article class="article-card">
-                    <img src="./assets/img/home-background.jpg" alt="Article Img" class="article-img">
-                    <div class="article-header">
-                        <a href="" class="article-title" title="Hello">
-                            Hello
-                        </a>
-                        <h5 class="article-date">
-                            Kamis, 3 November 2022
-                        </h5>
-                    </div>
-                    <p class="article-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At reprehenderit facere exercitationem fugit optio ex ab dicta officia modi illo quibusdam minima, ad, perferendis nihil?
-                    </p>
-                </article>
-                <article class="article-card">
-                    <img src="./assets/img/home-background.jpg" alt="Article Img" class="article-img">
-                    <div class="article-header">
-                        <a href="" class="article-title" title="Hello">
-                            Hello
-                        </a>
-                        <h5 class="article-date">
-                            Kamis, 3 November 2022
-                        </h5>
-                    </div>
-                    <p class="article-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At reprehenderit facere exercitationem fugit optio ex ab dicta officia modi illo quibusdam minima, ad, perferendis nihil?
-                    </p>
-                </article>
-            </main>
-        </section>
-        <section id="contact">
-            <h1 class="section-title">
-                Contact Us
-            </h1>
-            <main class="contact-group">
-                <form class="contact-form">
-                    <div class="input-group">
-                        <label for="name">Full Name:</label>
-                        <input type="text" name="name" id="name-input" placeholder="e.g. Alexander Bell" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="name">Email:</label>
-                        <input type="text" name="name" id="name-input" placeholder="e.g. alexanderbell@example.com" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="name">Message:</label>
-                        <textarea name="name" rows="6" id="name-input" placeholder="Describe your message..." required></textarea>
-                    </div>
-                    <div class="input-group">
-                        <button type="submit" class="contact-form-button">Send Message</button>
-                    </div>
-                </form>
-                <div class="contact-img">
-                    <svg width="300" height="300" viewBox="0 0 524 524" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M436.667 87.3333H131C106.918 87.3333 87.3333 106.918 87.3333 131V240.167H131V174.667L270.733 279.467C274.514 282.298 279.11 283.828 283.833 283.828C288.556 283.828 293.153 282.298 296.933 279.467L436.667 174.667V371.167H262V414.833H436.667C460.749 414.833 480.333 395.249 480.333 371.167V131C480.333 106.918 460.749 87.3333 436.667 87.3333ZM283.833 234.708L145.541 131H422.126L283.833 234.708Z" fill="#1E5276"/>
-                        <path d="M43.6667 262H196.5V305.667H43.6667V262ZM87.3334 327.5H218.333V371.167H87.3334V327.5ZM152.833 393H240.167V436.667H152.833V393Z" fill="#1E5276"/>
-                    </svg>                        
+        <section id="article-detail">
+            <article class="article-content">
+                <div class="article-content-header">
+                    <h1 class="content-title">Aritmatika menggunakan Pemrograman Python</h1>
+                    <h5 class="content-date">Kamis, 3 September 2022</h5>
                 </div>
-            </main>
+                <div class="content-point-group">
+                    <h3 class="point-title">Pengertian Aritmatika</h3>
+                    <p class="point-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis consequatur possimus, accusantium deleniti sunt a ipsa eligendi cum, dolores adipisci error illo nobis! Deserunt nam nesciunt sunt doloremque asperiores nobis maiores illum provident? Ad molestias eos fuga magni error vel perferendis sit, minus officia repellendus aliquam tempora architecto? Repellat!
+                    </p>
+                </div>
+                <div class="content-point-group">
+                    <h3 class="point-title">Pengertian Aritmatika</h3>
+                    <p class="point-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis consequatur possimus, accusantium deleniti sunt a ipsa eligendi cum, dolores adipisci error illo nobis! Deserunt nam nesciunt sunt doloremque asperiores nobis maiores illum provident? Ad molestias eos fuga magni error vel perferendis sit, minus officia repellendus aliquam tempora architecto? Repellat!
+                    </p>
+                </div>
+                <div class="content-point-group">
+                    <h3 class="point-title">Pengertian Aritmatika</h3>
+                    <p class="point-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis consequatur possimus, accusantium deleniti sunt a ipsa eligendi cum, dolores adipisci error illo nobis! Deserunt nam nesciunt sunt doloremque asperiores nobis maiores illum provident? Ad molestias eos fuga magni error vel perferendis sit, minus officia repellendus aliquam tempora architecto? Repellat!
+                    </p>
+                </div>
+                <div class="content-point-group">
+                    <h3 class="point-title">Pengertian Aritmatika</h3>
+                    <p class="point-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis consequatur possimus, accusantium deleniti sunt a ipsa eligendi cum, dolores adipisci error illo nobis! Deserunt nam nesciunt sunt doloremque asperiores nobis maiores illum provident? Ad molestias eos fuga magni error vel perferendis sit, minus officia repellendus aliquam tempora architecto? Repellat!
+                    </p>
+                </div>
+                <div class="content-point-group">
+                    <h3 class="point-title">Pengertian Aritmatika</h3>
+                    <p class="point-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis consequatur possimus, accusantium deleniti sunt a ipsa eligendi cum, dolores adipisci error illo nobis! Deserunt nam nesciunt sunt doloremque asperiores nobis maiores illum provident? Ad molestias eos fuga magni error vel perferendis sit, minus officia repellendus aliquam tempora architecto? Repellat!
+                    </p>
+                </div>
+                <div class="content-point-group">
+                    <h3 class="point-title">Pengertian Aritmatika</h3>
+                    <p class="point-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis consequatur possimus, accusantium deleniti sunt a ipsa eligendi cum, dolores adipisci error illo nobis! Deserunt nam nesciunt sunt doloremque asperiores nobis maiores illum provident? Ad molestias eos fuga magni error vel perferendis sit, minus officia repellendus aliquam tempora architecto? Repellat!
+                    </p>
+                </div>
+                <div class="content-point-group">
+                    <h3 class="point-title">Pengertian Aritmatika</h3>
+                    <p class="point-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis consequatur possimus, accusantium deleniti sunt a ipsa eligendi cum, dolores adipisci error illo nobis! Deserunt nam nesciunt sunt doloremque asperiores nobis maiores illum provident? Ad molestias eos fuga magni error vel perferendis sit, minus officia repellendus aliquam tempora architecto? Repellat!
+                    </p>
+                </div>
+                <div class="content-point-group">
+                    <h3 class="point-title">Pengertian Aritmatika</h3>
+                    <p class="point-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis consequatur possimus, accusantium deleniti sunt a ipsa eligendi cum, dolores adipisci error illo nobis! Deserunt nam nesciunt sunt doloremque asperiores nobis maiores illum provident? Ad molestias eos fuga magni error vel perferendis sit, minus officia repellendus aliquam tempora architecto? Repellat!
+                    </p>
+                </div>
+            </article>
+            <aside class="sidebar">
+                <div class="subscription-box">
+                    <label for="subscription" class="subscription-title">
+                        Subscribe to my email newsletter for information on modern programming.
+                    </label>
+                    <input type="email" name="subscription" placeholder="e.g.example@example.com" id="subscription-input">
+                </div>
+            </aside>
         </section>
     </div>
+
 
     <svg xmlns="http://www.w3.org/2000/svg" id="wave-img" viewBox="0 0 1440 320"><path fill="#1E5276" fill-opacity="1" d="M0,256L48,240C96,224,192,192,288,197.3C384,203,480,245,576,240C672,235,768,181,864,170.7C960,160,1056,192,1152,202.7C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     
@@ -144,5 +115,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/script.js"></script>  
+    <script src="./assets/data.js"></script>  
+    <script src="./assets/detail-article.js"></script>  
 </body>
 </html>
