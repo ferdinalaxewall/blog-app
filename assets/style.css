@@ -243,7 +243,7 @@ section{
     margin-left: 2px;
     border-right: 2px solid var(--clr-white);
     animation: blink .5s infinite linear;
-    -webkit-animation: blink .5s infinite linear;
+    -webkit-animation: blink .3s infinite linear;
 }
 
 .section-title{
