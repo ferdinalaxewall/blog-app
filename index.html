@@ -45,8 +45,8 @@
             <h1 class="section-title">
                 Popular Article
             </h1>
-            <main class="article-group">
-                <article class="article-card">
+            <main class="article-group" id="article-card-box">
+                <!-- <article class="article-card">
                     <img src="./assets/img/article/arithmetic-img.jpg" alt="Article Img" class="article-img">
                     <div class="article-header">
                         <a href="" class="article-title" title="Aritmatika dalam Pemrograman Python">
@@ -87,7 +87,7 @@
                     <p class="article-body">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. At reprehenderit facere exercitationem fugit optio ex ab dicta officia modi illo quibusdam minima, ad, perferendis nihil?
                     </p>
-                </article>
+                </article> -->
             </main>
         </section>
         <section id="contact">
@@ -145,5 +145,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/script.js"></script>  
     <script src="./assets/data.js"></script>  
+    <script>
+        const texts = ['M. Rifky Maulana', 'Ahmad Fariz', 'M. Ferdinal', 'M. Syamsul', 'Anindiya Imtiyaz'];
+        let count = 0 ;
+        let index = 0;
+        let currentText = '';
+        let letter = '';
+
+        (function type() {
+            
+            if (count === texts.length) {
+                count = 0;
+            }
+
+            currentText = texts[count];
+            letter = currentText.slice(0, ++index);
+            
+            document.querySelector('#typing-text').textContent = letter;
+            if (letter.length === currentText.length) {
+                count++;
+                index = 0;
+            }
+            setTimeout(type, 400);
+        }());
+    </script>
 </body>
 </html>

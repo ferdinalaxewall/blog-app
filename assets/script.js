@@ -1,25 +1,25 @@
-const texts = ['M. Rifky Maulana', 'Ahmad Fariz', 'M. Ferdinal', 'M. Syamsul', 'Anindiya Imtiyaz'];
-let count = 0 ;
-let index = 0;
-let currentText = '';
-let letter = '';
+$(document).ready(function(){
+    const arrayArticle = getAllArticle();
 
-(function type() {
-    
-    if (count === texts.length) {
-        count = 0;
-    }
+    arrayArticle.map((article) => {
+        const articleHtml = `<article class="article-card">
+                                <img src="./assets/img/article/${article.image}" alt="${article.title}" class="article-img" loading="lazy">
+                                <div class="article-header">
+                                    <a href="/article.html?article=${article.id}" class="article-title" title="${article.title}">
+                                        ${article.title}
+                                    </a>
+                                    <h5 class="article-date">
+                                        ${article.date}
+                                    </h5>
+                                </div>
+                                <p class="article-body">
+                                    ${article.content[0].description[0]}
+                                </p>
+                            </article>`
 
-    currentText = texts[count];
-    letter = currentText.slice(0, ++index);
-    
-    document.querySelector('#typing-text').textContent = letter;
-    if (letter.length === currentText.length) {
-        count++;
-        index = 0;
-    }
-    setTimeout(type, 400);
-}());
+        $(".article-group").append(articleHtml)
+    })
+});
 
 $(window).scroll(function(){
     let windowScroll = $(this).scrollTop();
