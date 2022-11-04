@@ -160,7 +160,7 @@ let dataArticle = [
                 "title" : "Mencoba Series",
                 "description" : [
                     "Series merupakan struktur data dasar dalam Pandas. Series diibaratkan sebagai array satu dimensi sama halnya dengan numpy array, hanya bedanya mempunyai index dan index tersebut dapat kita kontrol dari setiap elemen tersebut.  Perintah dasar untuk membuat sebuah series dengan Pandas adalah",
-                    "Dengan menggunakan pip:",
+                    "image=>pandas-series.PNG"
                 ]
             },
             {
@@ -170,6 +170,7 @@ let dataArticle = [
                     "syntax=>pandas.Series(data=None, index=None, dtype=None, name=None, copy=False, fastpath=False)",
                     "Parameter  data, diisi dengan data yang akan dibuat series. Struktur data yang bisa ditampung berupa integer, float, dan juga string. parameter index, diisi dengan index dari series. Jumlah index harus sama dengan jumlah data. Jika kita tidak mengisi parameter index, maka series akan memiliki index integer seperti halnya array biasa. Parameter dtype, diisi dengan tipe data dari series, dan parameter copy untuk copy data, secara default akan bernilai false.",
                     "Berdasarkan sintaks di atas, kita akan membuat contoh series menggunakan Python list ataupun numpy sebagai contoh data untuk membuat series. Terlihat bahwa indeks dari series berubah menjadi [12,13,14,15]. Perlu diingat bahwa pengaturan indeks harus sesuai dengan panjang dari data yang ada, bila tidak sesuai akan menimbulkan error panjang dari indeks tidak sesuai.",
+                    "image=>pandas-index.PNG"
                 ]
             },
             {
@@ -183,6 +184,15 @@ let dataArticle = [
                     "-- columns merupakan label untuk kolom",
                     "-- dtype merupakan tipe data per kolom",
                     "-- copy digunakan untuk menyalin data, defaultnya False    ",
+                ]
+            },
+            {
+                "title" : "Studi Kasus",
+                "description" : [
+                    "Contoh penggunaan Library Pandas dalam pemrograman Python: Dalam kasus ini kita akan membuat sebuah program untuk menampilkan sebuah data yang sudah user(pengguna) masukkan(input), kedalam sebuah tabel.",
+                    "link=>https://wtools.io/code/embed-iframe/bG9H",
+                    "Maka output yang dihasilkan seperti ini :",
+                    "image=>pandas-terminal.PNG"
                 ]
             },
         ],

@@ -445,6 +445,7 @@ section{
     background-color: var(--clr-primary);
     color: var(--clr-white);
     margin-top: -5px;
+    padding-top: 30px;
     padding-bottom: 60px;
 }
 
