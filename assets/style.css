@@ -151,7 +151,7 @@ section{
 #home{
     height: var(--home-height);
     width: 100%;
-    /* background-image: url("./img/home-background.jpg"); */
+    background-image: url("./img/home-background.jpg");
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -792,6 +792,14 @@ section{
         --fs-article-body:16px;
         --fs-body:14px;
         --fs-sub-body:12px
+    }
+
+    #home{
+    border-radius: 0 0 20px 20px;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    -ms-border-radius: 0 0 20px 20px;
+    -o-border-radius: 0 0 20px 20px;
     }
 }
 
